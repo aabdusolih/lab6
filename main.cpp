@@ -271,3 +271,78 @@ int main() {
     cout << "You took " << counter << " guesses to find the number." << endl;
     return 0;
 }*/
+
+/*  problem 14
+int voidwelcomeMassage() {
+    cout << "Welcome to c++ programming world!"<< endl;
+    return 0;
+}
+
+int main() {
+    voidwelcomeMassage();
+}*/
+
+/*  problem 15
+void greetUser(string name) {
+    cout << "Hello, "<< name << "!" << endl;
+}
+
+int main() {
+    string name;
+    cout << "What is your name?" << endl;
+    cin >> name;
+    greetUser(name);
+}*/
+
+/*  problem 16
+void maxNumber(int a ,int b) {
+    if (a > b) {
+        cout << a << " is greater than "<< b << endl;
+    }
+    else if (a < b) {
+        cout << b << " is greater than "<< a << endl;
+    }
+    else {
+        cout << a << " is equal to " << b << endl;
+    }
+}
+
+int main() {
+    int a, b;
+    cout << "Enter two numbers: ";
+    cin >> a >> b;
+    maxNumber(a,b);
+}*/
+
+/*  problem 17
+void factorial(int n) {
+    int f = 1;
+    for (int i = 1; i <= n; i++) {
+        f *= i;
+    }
+    cout << f << endl;
+}
+
+int main() {
+    int n;
+    cout << "Enter a number: ";
+    cin >> n;
+    factorial(n);
+}*/
+
+// problem 18
+void rectangleprinter(int a, int b) {
+    for (int i = 1; i <= b; i++) {
+        for (int j = 1; j <= a; j++) {
+            cout << "*";
+        }
+        cout << endl;
+    }
+}
+
+int main() {
+    int a, b;
+    cout << "Enter dimensions of the rectangle(width, height): ";
+    cin >> a >> b;
+    rectangleprinter(a, b);
+}
